@@ -44,6 +44,14 @@ h3 {
   cursor: pointer;
 }
 
+.btn:hover {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #039BD3;
+}
+
 form {
   width: 820px;
   height: 460px;
