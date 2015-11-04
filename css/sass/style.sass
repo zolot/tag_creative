@@ -1,0 +1,239 @@
+@import "bourbon/bourbon"
+
+$gray-color: #959595
+$dark-color: #252525
+$blue-color: #00aff0
+
+body
+	font-family: "RobotoMedium", sans-serif
+	font-size: 18px
+	color: $gray-color
+	text-align: center
+	min-width: 1250px
+	position: relative
+	-webkit-font-smoothing: antialised
+	margin: 0
+	padding: 0
+	min-width: 1270px
+	padding-top: 75px
+h1
+	font-size: 72px
+	font-family: "RobotoBold";
+	text-transform: uppercase
+	margin: 50px 0 40px 
+h2
+	font-size: 30px
+	font-family: "RobotoMedium";
+	margin-bottom: 15px
+h3 
+	font-size: 48px
+	color: #252525
+	font-family: 'RobotoThin'
+.btn 
+	color: #fff 
+	background-color: $blue-color
+	display: inline-block
+	text-decoration: none
+	border-radius: 3px 
+	font-size: 30px
+	padding: 7px 10px
+	box-sizing: border-box
+	border: none
+	cursor: pointer
+
+form 
+	width: 820px
+	height: 460px
+	background-color: #FFF
+	text-align: center
+	padding: 70px 150px 
+	box-sizing: border-box
+	margin: 0 auto;
+	position: relative
+	h3 
+		margin-top: 0
+	input
+		width: 215px
+		height: 35px
+		text-indent: 10px
+		border: 1px solid $gray-color
+		border-radius: 3px 
+		display: inline-block
+		margin: 10px
+		vertical-align: top
+	p 
+		border-top: 1px solid $gray-color
+		width: 215px
+		display: inline-block
+		font-size: 14px
+		font-family: "RobotoLight";
+		margin: 10px
+		vertical-align: top
+		text-align: left
+	.btn 
+		width: 245px
+		height: 50px
+		margin-top: 30px
+header
+	background: url('../img/header-bg.jpg') 
+	background-position: center 
+	background-size: cover
+	color: #fff
+	padding: 150px
+	.top-line
+		height: 75px
+		background-color: #FFF
+		position: fixed
+		width: 100%
+		top: 0
+		left: 0
+		.logo
+			position: absolute 
+			top: 20px;
+			left: 50%;
+			margin-left: -105px;
+		.container
+			max-width: 1250px
+			margin: 0 auto
+		.social
+			float: left
+			a 
+				margin: 0 10px 
+				color: $dark-color
+				font-size: 20px 
+				line-height: 70px
+				&:hover
+					color: $gray-color
+	.line
+		width: 20px 
+		height: 2px 
+		margin: 0 auto 30px
+		background-color: #dddddd
+	.specialization
+	.btn 
+		width: 240px 
+		height: 65px
+		line-height: 25px
+		padding: 20px 
+		margin-top: 50px
+
+#albums
+	.album-wrap
+		overflow: hidden
+		width: 100%
+		max-width: 2000px
+		margin: 0 auto
+		.descr
+			width: 50%
+			height: 100%
+			float: left
+			display: table
+			.center-wrap
+				display: table-cell
+				vertical-align: middle
+				.text-wrap
+					width: 450px
+					margin: 0 auto
+					text-align: left
+			.btn 
+				margin: 30px 0
+			h3 
+				margin: 0 0 20px
+			p 
+				font-family: 'RobotoLight'	
+		img 
+			width: 50%
+			float: right
+		&:nth-child(even)
+			background-color: #f0f0f0
+			.descr
+				float: right
+			img
+				float: left
+
+#action
+	padding: 100px
+	h3
+		margin: 0 0 20px
+	p 
+		font-family: "RobotoRegular";
+	.btn 
+		margin: 35px 0 0
+
+#brands
+	background-image: url("../img/brands-bg.jpg")
+	background-size: cover
+	background-position: center top 
+	padding: 50px 0
+	img 
+		margin: 25px 30px
+
+#dowload
+	padding: 80px
+	.btn 
+		padding: 7px 20px
+	p 
+		font-family: "RobotoRegular";
+	h3 
+		margin-top: 0
+
+#contacts
+	.contact-wrap
+		overflow: hidden
+		width: 100%
+		max-width: 2000px
+		background-color: #f0f0f0
+		margin: 0 auto
+		.descr
+			width: 50%
+			height: 100%
+			float: left
+			display: table
+			.center-wrap
+				display: table-cell
+				vertical-align: middle
+				.text-wrap
+					width: 450px
+					margin: 0 auto
+					text-align: left
+			.btn 
+				margin: 30px 0
+			h3 
+				margin: 0 0 20px
+			p 
+				font-family: "RobotoRegular";
+			span
+				font-family: "RobotoBold";
+
+		img 
+			width: 50%
+			float: right
+
+footer
+	padding: 20px 10px
+	overflow: hidden
+	.container
+		max-width: 1250px
+		margin: 0 auto
+		overflow: hidden
+	.right
+		float: left
+		font-family: "RobotoLight";
+		font-size: 14px
+	img 
+		display: inline-block
+		margin-right: 10px
+	.copyright
+		display: inline-block
+	.social
+		float: right
+		a 
+			margin: 0 10px 
+			color: $gray-color
+			font-size: 20px 
+			line-height: 50px
+			&:hover
+				color: $dark-color
+
+.hidden
+	display: none

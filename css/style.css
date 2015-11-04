@@ -1,0 +1,336 @@
+body {
+  font-family: "RobotoMedium", sans-serif;
+  font-size: 18px;
+  color: #959595;
+  text-align: center;
+  min-width: 1250px;
+  position: relative;
+  -webkit-font-smoothing: antialised;
+  margin: 0;
+  padding: 0;
+  min-width: 1270px;
+  padding-top: 75px;
+}
+
+h1 {
+  font-size: 72px;
+  font-family: "RobotoBold";
+  text-transform: uppercase;
+  margin: 50px 0 40px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "RobotoMedium";
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 48px;
+  color: #252525;
+  font-family: 'RobotoThin';
+}
+
+.btn {
+  color: #fff;
+  background-color: #00aff0;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 3px;
+  font-size: 30px;
+  padding: 7px 10px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  width: 820px;
+  height: 460px;
+  background-color: #FFF;
+  text-align: center;
+  padding: 70px 150px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+form h3 {
+  margin-top: 0;
+}
+
+form input {
+  width: 215px;
+  height: 35px;
+  text-indent: 10px;
+  border: 1px solid #959595;
+  border-radius: 3px;
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+}
+
+form p {
+  border-top: 1px solid #959595;
+  width: 215px;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "RobotoLight";
+  margin: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+form .btn {
+  width: 245px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+header {
+  background: url("../img/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 150px;
+}
+
+header .top-line {
+  height: 75px;
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+header .top-line .logo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -105px;
+}
+
+header .top-line .container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+header .top-line .social {
+  float: left;
+}
+
+header .top-line .social a {
+  margin: 0 10px;
+  color: #252525;
+  font-size: 20px;
+  line-height: 70px;
+}
+
+header .top-line .social a:hover {
+  color: #959595;
+}
+
+header .line {
+  width: 20px;
+  height: 2px;
+  margin: 0 auto 30px;
+  background-color: #dddddd;
+}
+
+header .btn {
+  width: 240px;
+  height: 65px;
+  line-height: 25px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#albums .album-wrap {
+  overflow: hidden;
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+#albums .album-wrap .descr {
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: table;
+}
+
+#albums .album-wrap .descr .center-wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#albums .album-wrap .descr .center-wrap .text-wrap {
+  width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#albums .album-wrap .descr .btn {
+  margin: 30px 0;
+}
+
+#albums .album-wrap .descr h3 {
+  margin: 0 0 20px;
+}
+
+#albums .album-wrap .descr p {
+  font-family: 'RobotoLight';
+}
+
+#albums .album-wrap img {
+  width: 50%;
+  float: right;
+}
+
+#albums .album-wrap:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+#albums .album-wrap:nth-child(even) .descr {
+  float: right;
+}
+
+#albums .album-wrap:nth-child(even) img {
+  float: left;
+}
+
+#action {
+  padding: 100px;
+}
+
+#action h3 {
+  margin: 0 0 20px;
+}
+
+#action p {
+  font-family: "RobotoRegular";
+}
+
+#action .btn {
+  margin: 35px 0 0;
+}
+
+#brands {
+  background-image: url("../img/brands-bg.jpg");
+  background-size: cover;
+  background-position: center top;
+  padding: 50px 0;
+}
+
+#brands img {
+  margin: 25px 30px;
+}
+
+#dowload {
+  padding: 80px;
+}
+
+#dowload .btn {
+  padding: 7px 20px;
+}
+
+#dowload p {
+  font-family: "RobotoRegular";
+}
+
+#dowload h3 {
+  margin-top: 0;
+}
+
+#contacts .contact-wrap {
+  overflow: hidden;
+  width: 100%;
+  max-width: 2000px;
+  background-color: #f0f0f0;
+  margin: 0 auto;
+}
+
+#contacts .contact-wrap .descr {
+  width: 50%;
+  height: 100%;
+  float: left;
+  display: table;
+}
+
+#contacts .contact-wrap .descr .center-wrap {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#contacts .contact-wrap .descr .center-wrap .text-wrap {
+  width: 450px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#contacts .contact-wrap .descr .btn {
+  margin: 30px 0;
+}
+
+#contacts .contact-wrap .descr h3 {
+  margin: 0 0 20px;
+}
+
+#contacts .contact-wrap .descr p {
+  font-family: "RobotoRegular";
+}
+
+#contacts .contact-wrap .descr span {
+  font-family: "RobotoBold";
+}
+
+#contacts .contact-wrap img {
+  width: 50%;
+  float: right;
+}
+
+footer {
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+footer .container {
+  max-width: 1250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+footer .right {
+  float: left;
+  font-family: "RobotoLight";
+  font-size: 14px;
+}
+
+footer img {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer .copyright {
+  display: inline-block;
+}
+
+footer .social {
+  float: right;
+}
+
+footer .social a {
+  margin: 0 10px;
+  color: #959595;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+footer .social a:hover {
+  color: #252525;
+}
+
+.hidden {
+  display: none;
+}
