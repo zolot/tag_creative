@@ -34,6 +34,11 @@ $(document).ready(function() {
         wResize();
     });
 
+     $("body").on("click", ".arrov-up", function (event) {
+        event.preventDefault();
+        $('body,html').animate({scrollTop: 0}, 1000);
+    })
+
     $('.works-popup').magnificPopup({
          mainClass: 'mfp-with-zoom', // this class is for CSS animation below
          removalDelay: 300,
