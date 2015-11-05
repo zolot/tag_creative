@@ -98,16 +98,29 @@ form
 			margin: 0 auto
 		.social
 			float: left
+			text-align: right
+			span
+				margin: 0 15px
+				color: $dark-color
 			a 
 				margin: 0 10px 
 				color: $dark-color
 				font-size: 20px 
-				line-height: 70px
+				line-height: 43px
 				&:hover
 					color: $gray-color
+		.back-call
+			float: right
+			color: $dark-color
+			font-size: 20px 
+			line-height: 70px
+			outline: none
+			text-decoration: none
+			&:hover
+				text-decoration: underline
 header
 	background: url('../img/header-bg.jpg') 
-	background-position: center 
+	background-position: center top
 	background-size: cover
 	color: #fff
 	padding: 90px
@@ -361,6 +374,8 @@ footer
 			line-height: 50px
 			&:hover
 				color: $dark-color
+		span 
+			margin: 0 15px
 
 .hidden
 	display: none

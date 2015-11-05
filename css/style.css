@@ -122,22 +122,41 @@ form .btn {
 
 .top-line .social {
   float: left;
+  text-align: right;
+}
+
+.top-line .social span {
+  margin: 0 15px;
+  color: #252525;
 }
 
 .top-line .social a {
   margin: 0 10px;
   color: #252525;
   font-size: 20px;
-  line-height: 70px;
+  line-height: 43px;
 }
 
 .top-line .social a:hover {
   color: #959595;
 }
 
+.top-line .back-call {
+  float: right;
+  color: #252525;
+  font-size: 20px;
+  line-height: 70px;
+  outline: none;
+  text-decoration: none;
+}
+
+.top-line .back-call:hover {
+  text-decoration: underline;
+}
+
 header {
   background: url("../img/header-bg.jpg");
-  background-position: center;
+  background-position: center top;
   background-size: cover;
   color: #fff;
   padding: 90px;
@@ -480,6 +499,10 @@ footer .social a {
 
 footer .social a:hover {
   color: #252525;
+}
+
+footer .social span {
+  margin: 0 15px;
 }
 
 .hidden {
