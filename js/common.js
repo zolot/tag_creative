@@ -1,27 +1,27 @@
 function wResize() {
    var album_height = $('#albums .album-wrap img').height();
     $('#albums .album-wrap .descr').css('height', album_height);
-    // var contacts_height = $('#contacts .contact-wrap img').height();
-    var img = $('#contacts .contact-wrap img');
-    img_fun(img)
-    // $('#contacts .contact-wrap .descr').css('height', contacts_height);
+    var contacts_height = $('#contacts .contact-wrap img').height();
+    $('#contacts .contact-wrap .descr').css('height', contacts_height);
 };
 
-function img_fun(src) {
+function img_fun(image) {
 	var img = new Image();
 	img.onload = function() {
-		console.log(this.height)
-		$('#contacts .contact-wrap .descr').css('height', this.height);
+		console.log(this.height);
+		wResize();
 	}
-	console.log(img)
-	img.src = src.attr("src");
+	img.src = image.attr("src");
 }
 
 $(document).load(function() {
+	img_fun(img)
     wResize();
 });
 
 $(document).ready(function() {
+	img_fun($('#albums .album-wrap img'));
+	img_fun($('#contacts .contact-wrap img'));
     wResize();
     $(window).resize(function() {
         wResize();
