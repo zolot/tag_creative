@@ -1,3 +1,7 @@
+html {
+  margin-right: 0 !important;
+}
+
 body {
   font-family: "RobotoMedium", sans-serif;
   font-size: 18px;
@@ -95,15 +99,7 @@ form .btn {
   margin-top: 30px;
 }
 
-header {
-  background: url("../img/header-bg.jpg");
-  background-position: center;
-  background-size: cover;
-  color: #fff;
-  padding: 90px;
-}
-
-header .top-line {
+.top-line {
   height: 75px;
   background-color: #FFF;
   position: fixed;
@@ -112,31 +108,39 @@ header .top-line {
   left: 0;
 }
 
-header .top-line .logo {
+.top-line .logo {
   position: absolute;
   top: 20px;
   left: 50%;
   margin-left: -105px;
 }
 
-header .top-line .container {
+.top-line .container {
   max-width: 1250px;
   margin: 0 auto;
 }
 
-header .top-line .social {
+.top-line .social {
   float: left;
 }
 
-header .top-line .social a {
+.top-line .social a {
   margin: 0 10px;
   color: #252525;
   font-size: 20px;
   line-height: 70px;
 }
 
-header .top-line .social a:hover {
+.top-line .social a:hover {
   color: #959595;
+}
+
+header {
+  background: url("../img/header-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  padding: 90px;
 }
 
 header .line {
@@ -206,6 +210,50 @@ header .btn {
 
 #albums .album-wrap:nth-child(even) img {
   float: left;
+}
+
+#albums .mfp-close-btn-in .mfp-close {
+  color: #fff;
+}
+
+#work-photos-slider {
+  width: 60%;
+  max-width: 1400px;
+  min-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#work-photos-slider button {
+  color: #fff;
+}
+
+#work-photos-slider img {
+  width: 100%;
+  height: auto;
+}
+
+#work-photos-slider .owl-prev, #work-photos-slider .owl-next {
+  position: absolute;
+  top: 50% !important;
+  margin-top: -70px !important;
+  background-image: url("../img/arrows.png") !important;
+  background-color: transparent !important;
+  font-size: 0 !important;
+  padding: 0 !important;
+  width: 37px;
+  height: 61px;
+  z-index: 1000;
+}
+
+#work-photos-slider .owl-prev {
+  left: -100px;
+  background-position: 0 0 !important;
+}
+
+#work-photos-slider .owl-next {
+  right: -100px;
+  background-position: 102px 0 !important;
 }
 
 #action {
@@ -298,15 +346,110 @@ header .btn {
   float: right;
 }
 
+.mfp-move-from-top .mfp-content {
+  vertical-align: middle;
+}
+
+.mfp-move-from-top .mfp-content form {
+  opacity: 0;
+  transition: all 0.4s;
+  transform: translateY(-100px);
+}
+
+.mfp-move-from-top .mfp-content.mfp-bg {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.mfp-move-from-top.mfp-ready form {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mfp-move-from-top.mfp-ready.mfp-bg {
+  opacity: 0.8;
+  transition: all 0.4s;
+}
+
+.mfp-move-from-top.mfp-removing form {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+
+.mfp-move-from-top.mfp-removing.mfp-bg {
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+  opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+.mfp-with-zoom #work-photos-slider {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  transform: scale(0.3);
+}
+
+.mfp-with-zoom.mfp-bg {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready #work-photos-slider {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing #work-photos-slider {
+  opacity: 0;
+  transform: scale(0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.mfp-with-zoom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
 footer {
   padding: 20px 10px;
-  overflow: hidden;
+  position: relative;
 }
 
 footer .container {
   max-width: 1250px;
   margin: 0 auto;
   overflow: hidden;
+}
+
+footer .arrov-up {
+  position: absolute;
+  top: -25px;
+  right: 0;
 }
 
 footer .right {

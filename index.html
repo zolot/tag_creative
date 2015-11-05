@@ -6,29 +6,28 @@
 
 	<title>Качественный дизайн в кратчайшие сроки</title>
 	<meta content="" name="description" />
-	<link rel="shortcut icon" href="favicon.png" />
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	
 	<link rel="stylesheet" href="libs/magnific/magnific-popup.css" />
 	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="libs/owl/owl.carousel.css" />
+	<link type="text/css" href="libs/owl/owl.transitions.css" rel="stylesheet">
+	<link type="text/css" href="libs/owl/owl.theme.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/style.css" />
 
 </head>
 <body>
-
-	<header>
-		<div class="top-line">
-			<div class="container">
-				<div class="social">
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-soundcloud"></i></a>
-				</div>
-				<img src="img/logo.png" alt="Tag.Creative" class="logo">
+	<div class="top-line">
+		<div class="container">
+			<div class="social">
+				<a href="https://m.vk.com/tag.creative" target="_blank"><i class="fa fa-vk"></i></a>
 			</div>
+			<img src="img/logo.png" alt="Tag.Creative" class="logo">
 		</div>
+	</div>
+	<header>
 		<h1>Качественный дизайн<br> в кратчайшие сроки</h1>
 		<div class="line"></div>
 		<h2>Вам нужен был дизайн вчера? Мы сделаем его позавчера!</h2>
@@ -48,7 +47,7 @@
 					
 				</div>
 			</div>
-			<img src="img/album.jpg">
+			<a href="#work-photos-slider" class="thumbnail works-popup"><img src="img/album.jpg"></a>
 		</div>
 		<div class="album-wrap">
 			<div class="descr">
@@ -61,7 +60,7 @@
 					
 				</div>
 			</div>
-			<img src="img/album-2.jpg">
+			<a href="#work-photos-slider" class="thumbnail works-popup"><img src="img/album-2.jpg"></a>
 		</div>
 		<div class="album-wrap">
 			<div class="descr">
@@ -74,7 +73,7 @@
 					
 				</div>
 			</div>
-			<img src="img/album.jpg">
+			<a href="#work-photos-slider" class="thumbnail works-popup"><img src="img/album.jpg"></a>
 		</div>
 		<div class="album-wrap">
 			<div class="descr">
@@ -87,7 +86,7 @@
 					
 				</div>
 			</div>
-			<img src="img/album-2.jpg">
+			<a href="#work-photos-slider" class="thumbnail works-popup"><img src="img/album-2.jpg"></a>
 		</div>
 	</section>
 
@@ -148,11 +147,10 @@
 				<p class="copyright">© 2015 HUGO. All rights resevered. Designed by DZOAN</p>
 			</div>
 			<div class="social">
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-soundcloud"></i></a>
+				<a href="https://m.vk.com/tag.creative" target="_blank"><i class="fa fa-vk"></i></a>
 			</div>
 		</div>
+			<img src="img/arrov-up.png" class="arrov-up">
 	</footer>
 	
 	<div class="hidden">
@@ -164,6 +162,20 @@
 			<p>Все поля обязательны  для заполнения</p>
 			<button class="btn">Заказать</button>
 		</form>
+
+		<div id="work-photos-slider" class="owl-carousel owl-theme">
+		  	<div class="item item-1">
+		      	<div class="container">
+			        <img src="img/album.jpg">
+		        </div>
+		    </div>
+		    <div class="item item-2">
+		      	<div class="container">
+			        <img src="img/album-2.jpg">
+		        </div>
+		    </div>                               
+		</div>
+
 	</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -174,7 +186,7 @@
 	
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/magnific/jquery.magnific-popup.min.js"></script>
-	
+	<script src="libs/owl/owl.carousel.min.js"></script>
 	<script src="js/common.js"></script>
 
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->

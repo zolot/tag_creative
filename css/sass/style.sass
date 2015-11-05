@@ -3,7 +3,8 @@
 $gray-color: #959595
 $dark-color: #252525
 $blue-color: #00aff0
-
+html 
+	margin-right: 0 !important
 body
 	font-family: "RobotoMedium", sans-serif
 	font-size: 18px
@@ -80,13 +81,7 @@ form
 		width: 245px
 		height: 50px
 		margin-top: 30px
-header
-	background: url('../img/header-bg.jpg') 
-	background-position: center 
-	background-size: cover
-	color: #fff
-	padding: 90px
-	.top-line
+.top-line
 		height: 75px
 		background-color: #FFF
 		position: fixed
@@ -110,6 +105,12 @@ header
 				line-height: 70px
 				&:hover
 					color: $gray-color
+header
+	background: url('../img/header-bg.jpg') 
+	background-position: center 
+	background-size: cover
+	color: #fff
+	padding: 90px
 	.line
 		width: 20px 
 		height: 2px 
@@ -156,6 +157,36 @@ header
 				float: right
 			img
 				float: left
+	.mfp-close-btn-in .mfp-close
+		color: #fff 
+#work-photos-slider
+	width: 60%
+	max-width: 1400px
+	min-width: 700px
+	margin: 0 auto
+	position: relative
+	button
+		color: #fff
+	img 
+		width: 100%
+		height: auto
+	.owl-prev, .owl-next
+		position: absolute;
+		top: 50% !important;
+		margin-top: -70px !important;
+		background-image: url("../img/arrows.png") !important;
+		background-color: transparent !important;
+		font-size: 0 !important;
+		padding: 0 !important;
+		width: 37px;
+		height: 61px;
+		z-index: 1000;
+	.owl-prev 
+		left: -100px
+		background-position: 0 0 !important;
+	.owl-next
+		right: -100px
+		background-position: 102px 0 !important;
 
 #action
 	padding: 100px
@@ -215,13 +246,103 @@ header
 			width: 50%
 			float: right
 
+.mfp-move-from-top 
+
+	.mfp-content 
+		vertical-align:middle; 
+
+		form
+			opacity: 0;
+			transition: all 0.4s;
+			transform: translateY(-100px);
+
+
+		&.mfp-bg 
+			opacity: 0;
+			transition: all 0.4s;
+
+	&.mfp-ready 
+		form
+			opacity: 1;
+			transform: translateY(0);
+
+		&.mfp-bg 
+			opacity: 0.8;
+			transition: all 0.4s;
+
+
+	&.mfp-removing 
+		form 
+			transform: translateY(-50px);
+			opacity: 0;
+
+		&.mfp-bg 
+			opacity: 0;
+			transition: all 0.4s;
+
+
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg 
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+
+
+.mfp-with-zoom.mfp-ready .mfp-container 
+	opacity: 1;
+
+.mfp-with-zoom.mfp-ready.mfp-bg 
+	opacity: 0.8;
+
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg 
+	opacity: 0;
+
+
+.mfp-with-zoom 
+
+	#work-photos-slider 
+		opacity: 0;
+		transition: all 0.5s ease-in-out; 
+		transform: scale(0.3); 
+	&.mfp-bg 
+		opacity: 0;
+		transition: all 0.5s ease-out;
+
+
+	&.mfp-ready 
+		#work-photos-slider
+			opacity: 1;
+			transition: all 0.5s ease-in-out; 
+			transform: scale(1); 
+		&.mfp-bg 
+			opacity: 0.8;
+
+	&.mfp-removing 
+		#work-photos-slider
+			opacity: 0;
+			transform: scale(0.3); 
+			transition: all 0.5s ease-in-out; 	
+		&.mfp-bg 
+			opacity: 0;
+		
+
 footer
 	padding: 20px 10px
-	overflow: hidden
+	position: relative
 	.container
 		max-width: 1250px
 		margin: 0 auto
 		overflow: hidden
+	.arrov-up
+		position: absolute
+		top: -25px 
+		right: 0
 	.right
 		float: left
 		font-family: "RobotoLight";
