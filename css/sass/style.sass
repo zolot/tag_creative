@@ -164,6 +164,7 @@ header
 		img 
 			width: 50%
 			float: right
+			cursor: zoom-in
 		&:nth-child(even)
 			background-color: #f0f0f0
 			.descr
@@ -343,6 +344,33 @@ header
 			transition: all 0.5s ease-in-out; 	
 		&.mfp-bg 
 			opacity: 0;
+
+
+
+.mfp-fade.mfp-bg 
+	opacity: 0;
+	-webkit-transition: all 0.9s ease-out;
+	-moz-transition: all 0.9s ease-out;
+	transition: all 0.9s ease-out;
+
+.mfp-fade.mfp-bg.mfp-ready 
+	opacity: 0.8;
+
+.mfp-fade.mfp-bg.mfp-removing 
+	opacity: 0;
+
+
+.mfp-fade.mfp-wrap .mfp-content 
+	opacity: 0;
+	-webkit-transition: all 0.9s ease-out;
+	-moz-transition: all 0.9s ease-out;
+	transition: all 0.9s ease-out;
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+	opacity: 1;
+
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+	opacity: 0;
 		
 
 footer
